@@ -1,0 +1,55 @@
+{
+  "nav": { "work": "Projekte", "approach": "Ansatz", "stack": "Stack", "contact": "Kontakt", "cv": "Lebenslauf" },
+  "hero": {
+    "eyebrow": "KI- & Automatisierungsentwickler — Aguascalientes, MX",
+    "headlinePre": "Ich verwandle komplexe Abläufe in ",
+    "headlineHl": "intelligente Systeme",
+    "headlinePost": ", die die entscheidenden Kennzahlen bewegen.",
+    "sub": "Entwickler für Automatisierung, Optimierung und KI mit nachweisbaren Ergebnissen — nicht nur ausgeliefertem Code. Ich arbeite am besten, wenn das Problem schwer und die Wirkung real ist.",
+    "ctaWork": "Arbeiten ansehen",
+    "ctaCv": "Lebenslauf herunterladen"
+  },
+  "impact": { "label": "Nachgewiesene Wirkung", "title": "Gelieferte Ergebnisse, in Zahlen." },
+  "metrics": {
+    "travel": "Weniger durchschnittliche Fahrzeit — TSP im operativen Maßstab mit Metaheuristiken gelöst.",
+    "compute": "Weniger redundante Berechnung unter Last durch Caching von Distanzmatrizen.",
+    "org": "Schnellere Organigramm-Updates dank dynamischer, rollenbasierter Oberflächen.",
+    "hack": "Nationale & internationale Hackathon-Siege."
+  },
+  "approach": {
+    "label": "Warum mit mir arbeiten",
+    "title": "Ich schreibe nicht nur Code — ich mache Abläufe messbar besser.",
+    "body": "Gib mir einen chaotischen, realen Prozess und ich verwandle ihn in ein skalierbares System, das sich selbst betreibt. Mein Kern ist Automatisierung und Optimierung: den Engpass finden, modellieren und Software liefern, die echter Last standhält.",
+    "body2": "Ich passe mich schnell an verschiedene Bereiche an — Feldlogistik, HR, Zoll, Landwirtschaft — und optimiere für Ergebnisse, nicht für Schlagwörter. Jedes Projekt hier existiert, weil es eine geschäftsrelevante Kennzahl bewegt hat."
+  },
+  "work": { "label": "Ausgewählte Arbeiten", "title": "Echte Systeme, echte Wirkung." },
+  "projects": {
+    "route": { "desc": "KI-gestützte Routenoptimierung für den Außendienst, die das Problem des Handlungsreisenden im großen Maßstab mit Metaheuristiken über echte Geodaten löst.", "k1": "Fahrzeit", "k2": "redundante Berechnung" },
+    "bioterra": { "tag": "1. Platz · Medellín, Kolumbien", "desc": "Smart-Agriculture-Plattform mit Echtzeit-Bodenüberwachung und blockchainbasierter Rückverfolgbarkeit. Erster Platz in der Umwelt-Kategorie.", "k1": "intl. Hackathon", "k2": "Bodenüberwachung" },
+    "hr": { "desc": "Full-Stack-System zur Organisationsverwaltung über die gesamte Hierarchie, mit rollenbasierten Oberflächen für Strukturänderungen in Echtzeit.", "k1": "manuelle Update-Zeit", "k2": "Echtzeit-Änderungen" },
+    "customs": { "desc": "Automatisierte Zoll-Angebotsverwaltung, die manuelle Engpässe beseitigte und Eingabefehler in internen Abläufen eliminierte.", "k1": "Bearbeitungszeit", "k2": "Eingabefehler" },
+    "demoLink": "Live-Demo",
+    "codeLink": "Code"
+  },
+  "demos": {
+    "label": "In Aktion sehen",
+    "title": "KI, die man laufen sehen kann.",
+    "route": { "t": "Routenoptimierer", "d": "Füge Stopps hinzu und sieh zu, wie die Route live neu optimiert wird — dieselbe Art Problem hinter meinem −35%-Fahrzeit-System.", "p": "// zeigt: Algorithmen + Visualisierung", "hint": "Tippen, um Stopps hinzuzufügen" },
+    "hand": { "t": "Hand-Tracking", "d": "Echtzeit-Handerkennung mit MediaPipe. Hier folgt die Hand deinem Cursor; in der echten App folgt sie deiner Kamera.", "p": "// zeigt: Computer Vision + Echtzeit", "hint": "Bewege den Cursor" },
+    "crop": { "t": "Anbauoptimierung", "d": "Bewege dich über das Feld, um Zellen zu bewässern, und sieh den Ertrag steigen — angelehnt an BioTerra.", "p": "// zeigt: Daten → Entscheidungen", "hint": "Zum Bewässern bewegen" }
+  },
+  "stack": {
+    "label": "Der Werkzeugkasten",
+    "title": "Die Werkzeuge hinter der Arbeit.",
+    "note": "Dies ist der einzige Ort, an dem ich Technologien aufliste — der Rest der Seite handelt davon, was ich damit gebaut habe.",
+    "lang": "Sprachen",
+    "fw": "Frameworks",
+    "ai": "KI & Optimierung",
+    "data": "Daten & Plattformen",
+    "ml": "Machine Learning",
+    "meta": "Metaheuristiken",
+    "fuzzy": "Fuzzylogik",
+    "constr": "Constraint-Optimierung"
+  },
+  "contact": { "label": "Kontakt aufnehmen", "title": "Ein schwieriges Problem? Lass uns etwas bauen.", "email": "Schreib mir" }
+}

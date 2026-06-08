@@ -1,0 +1,55 @@
+{
+  "nav": { "work": "Proyectos", "approach": "Enfoque", "stack": "Stack", "contact": "Contacto", "cv": "Descargar CV" },
+  "hero": {
+    "eyebrow": "Desarrollador de IA y Automatización — Aguascalientes, MX",
+    "headlinePre": "Convierto operaciones complejas en ",
+    "headlineHl": "sistemas inteligentes",
+    "headlinePost": " que mueven las métricas que importan.",
+    "sub": "Desarrollador de automatización, optimización e IA con un historial de resultados medibles — no solo código entregado. Doy lo mejor cuando el reto es difícil y el impacto es real.",
+    "ctaWork": "Ver el trabajo",
+    "ctaCv": "Descargar CV"
+  },
+  "impact": { "label": "Impacto comprobado", "title": "Resultados que he entregado, en números." },
+  "metrics": {
+    "travel": "Menos tiempo de viaje promedio — TSP resuelto a escala operativa con metaheurísticas.",
+    "compute": "Menos cómputo redundante bajo carga concurrente vía caché de matrices de distancia.",
+    "org": "Actualizaciones de organigrama más rápidas con interfaces dinámicas por roles.",
+    "hack": "Triunfos en hackathones nacionales e internacionales."
+  },
+  "approach": {
+    "label": "Por qué trabajar conmigo",
+    "title": "No solo escribo código — hago que las operaciones mejoren de forma medible.",
+    "body": "Dame un proceso real y desordenado y lo convierto en un sistema escalable que se opera solo. Mi núcleo es la automatización y la optimización: encontrar el cuello de botella, modelarlo y entregar software que aguanta carga real.",
+    "body2": "Me adapto rápido entre dominios — logística de campo, RR.HH., aduanas, agricultura — y optimizo por resultados, no por modas. Cada proyecto aquí existe porque movió un número que le importaba al negocio."
+  },
+  "work": { "label": "Trabajo seleccionado", "title": "Sistemas reales, impacto real." },
+  "projects": {
+    "route": { "desc": "Optimización de rutas con IA para operaciones de campo, resolviendo el Problema del Agente Viajero a escala con metaheurísticas sobre datos geoespaciales reales.", "k1": "tiempo de viaje", "k2": "cómputo redundante" },
+    "bioterra": { "tag": "1er lugar · Medellín, Colombia", "desc": "Plataforma de agricultura inteligente con monitoreo de suelo en tiempo real y trazabilidad basada en blockchain. Primer lugar en la vertical de medio ambiente.", "k1": "hackathon intl.", "k2": "monitoreo de suelo" },
+    "hr": { "desc": "Sistema full-stack de gestión organizacional que cubre toda la jerarquía de direcciones, con interfaces por roles para cambios estructurales en tiempo real.", "k1": "tiempo manual", "k2": "cambios en tiempo real" },
+    "customs": { "desc": "Gestión automatizada de cotizaciones aduaneras que eliminó cuellos de botella manuales y errores de captura en los flujos internos.", "k1": "tiempo de proceso", "k2": "errores de captura" },
+    "demoLink": "Demo en vivo",
+    "codeLink": "Código"
+  },
+  "demos": {
+    "label": "Míralo funcionar",
+    "title": "IA que puedes ver correr.",
+    "route": { "t": "Optimizador de rutas", "d": "Agrega paradas y mira cómo se re-optimiza la ruta en vivo — la misma clase de problema detrás de mi sistema de −35% en tiempo de viaje.", "p": "// demuestra: algoritmos + visualización", "hint": "Toca para añadir paradas" },
+    "hand": { "t": "Hand tracking", "d": "Detección de puntos de la mano en tiempo real con MediaPipe. Aquí la mano sigue tu cursor; en la app real sigue tu cámara.", "p": "// demuestra: visión por computadora + tiempo real", "hint": "Mueve el cursor" },
+    "crop": { "t": "Optimización de cultivos", "d": "Pasa sobre el campo para regar celdas y mira subir el rendimiento — eco del proyecto BioTerra.", "p": "// demuestra: datos → decisiones", "hint": "Pasa el cursor para regar" }
+  },
+  "stack": {
+    "label": "La caja de herramientas",
+    "title": "Las herramientas detrás del trabajo.",
+    "note": "Este es el único lugar donde listo tecnologías — el resto del sitio trata de lo que construí con ellas.",
+    "lang": "Lenguajes",
+    "fw": "Frameworks",
+    "ai": "IA y Optimización",
+    "data": "Datos y Plataformas",
+    "ml": "Machine Learning",
+    "meta": "Metaheurísticas",
+    "fuzzy": "Lógica difusa",
+    "constr": "Optimización con restricciones"
+  },
+  "contact": { "label": "Contáctame", "title": "¿Tienes un problema difícil? Construyamos algo.", "email": "Escríbeme" }
+}

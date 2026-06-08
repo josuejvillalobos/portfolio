@@ -1,0 +1,55 @@
+{
+  "nav": { "work": "Work", "approach": "Approach", "stack": "Stack", "contact": "Contact", "cv": "Download CV" },
+  "hero": {
+    "eyebrow": "AI & Automation Developer — Aguascalientes, MX",
+    "headlinePre": "I turn complex operations into ",
+    "headlineHl": "intelligent systems",
+    "headlinePost": " that move the metrics that matter.",
+    "sub": "Automation, optimization and AI developer with a track record of measurable results — not just shipped code. I do my best work when the problem is hard and the impact is real.",
+    "ctaWork": "See the work",
+    "ctaCv": "Download CV"
+  },
+  "impact": { "label": "Proven impact", "title": "Results I've shipped, in numbers." },
+  "metrics": {
+    "travel": "Less average travel time — TSP solved at operational scale with metaheuristics.",
+    "compute": "Less redundant computation under concurrent load via distance-matrix caching.",
+    "org": "Faster org-chart updates with dynamic, role-based interfaces.",
+    "hack": "National & international hackathon wins."
+  },
+  "approach": {
+    "label": "Why work with me",
+    "title": "I don't just write code — I make operations measurably better.",
+    "body": "Give me a messy, real-world process and I'll turn it into a scalable system that runs itself. My core is automation and optimization: finding the bottleneck, modeling it, and shipping software that holds up under real load.",
+    "body2": "I adapt fast across domains — field logistics, HR, customs, agriculture — and I optimize for outcomes, not buzzwords. Every project here exists because it moved a number that mattered to the business."
+  },
+  "work": { "label": "Selected work", "title": "Real systems, real impact." },
+  "projects": {
+    "route": { "desc": "AI-powered route optimization for field operations, solving the Traveling Salesman Problem at scale with metaheuristics over real geospatial data.", "k1": "travel time", "k2": "redundant compute" },
+    "bioterra": { "tag": "1st place · Medellín, Colombia", "desc": "Smart agriculture platform with real-time soil monitoring and blockchain-based traceability. First place in the environment vertical.", "k1": "intl. hackathon", "k2": "soil monitoring" },
+    "hr": { "desc": "Full-stack organizational management system covering the full directorate hierarchy, with role-based interfaces for real-time structural changes.", "k1": "manual update time", "k2": "real-time changes" },
+    "customs": { "desc": "Automated customs quotation management that removed manual bottlenecks and eliminated data-entry errors across internal workflows.", "k1": "processing time", "k2": "data-entry errors" },
+    "demoLink": "Live demo",
+    "codeLink": "Code"
+  },
+  "demos": {
+    "label": "See it work",
+    "title": "AI you can watch run.",
+    "route": { "t": "Route optimizer", "d": "Add delivery stops and watch the route re-optimize live — the same class of problem behind my −35% travel-time system.", "p": "// proves: algorithms + visualization", "hint": "Tap to add stops" },
+    "hand": { "t": "Hand tracking", "d": "Real-time hand-landmark detection with MediaPipe. Here the hand follows your cursor; in the live app it follows your camera.", "p": "// proves: computer vision + real-time", "hint": "Move your cursor" },
+    "crop": { "t": "Crop optimization", "d": "Move over the field to irrigate cells and watch yield climb — echoing the BioTerra project.", "p": "// proves: data → decisions", "hint": "Hover to irrigate" }
+  },
+  "stack": {
+    "label": "The toolbox",
+    "title": "The tools behind the work.",
+    "note": "This is the only place I list technologies — the rest of this site is about what I built with them.",
+    "lang": "Languages",
+    "fw": "Frameworks",
+    "ai": "AI & Optimization",
+    "data": "Data & Platforms",
+    "ml": "Machine Learning",
+    "meta": "Metaheuristics",
+    "fuzzy": "Fuzzy logic",
+    "constr": "Constraint optimization"
+  },
+  "contact": { "label": "Get in touch", "title": "Have a hard problem? Let's build something.", "email": "Email me" }
+}
