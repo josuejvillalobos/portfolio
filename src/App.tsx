@@ -1,32 +1,49 @@
+import { useLenis } from './hooks/useLenis'
+import Cursor from './components/Cursor'
+import Header from './components/layout/Header'
+import Hero from './components/sections/Hero'
+import Impact from './components/sections/impact'
+import Approach from './components/sections/Approach'
+import { Section } from './components/ui/Section'
+import { Reveal, Stagger, StaggerItem } from './components/ui/Reveal'
+import { Chip } from './components/ui/Chip'
 import { useLang } from './i18n'
 
-// Temporary shell to verify Step 1 (palette, fonts, trilingual toggle).
-// We replace this with the real Header + sections in the next steps.
+// Step 6: Header + Hero + Impact + Approach. Stack/Contact still placeholders.
 export default function App() {
-  const { t, cycle, next } = useLang()
+  useLenis()
+  const { t } = useLang()
 
   return (
-    <>
+    <div id="top">
       <div className="grain" />
+      <Cursor />
+      <Header />
 
-      <button
-        onClick={cycle}
-        className="fixed top-6 right-6 z-10 rounded-full border border-line px-4 py-2 font-mono text-xs text-muted transition hover:border-line2 hover:text-text"
-      >
-        {next.toUpperCase()}
-      </button>
+      <Hero />
+      <Impact />
+      <Approach />
 
-      <main className="mx-auto flex min-h-dvh max-w-5xl flex-col justify-center px-6 md:px-16">
-        <p className="mb-6 font-mono text-sm uppercase tracking-[0.16em] text-accent2">
-          {t('hero.eyebrow')}
-        </p>
-        <h1 className="max-w-[18ch] font-display text-4xl font-bold leading-[1.02] tracking-tight md:text-6xl lg:text-7xl">
-          {t('hero.headlinePre')}
-          <span className="font-semibold italic text-accent2">{t('hero.headlineHl')}</span>
-          {t('hero.headlinePost')}
-        </h1>
-        <p className="mt-8 max-w-[50ch] text-lg text-muted md:text-xl">{t('hero.sub')}</p>
-      </main>
-    </>
+      <Section id="stack" label={t('stack.label')} title={t('stack.title')}>
+        <Reveal>
+          <p className="mt-5 max-w-[60ch] text-lg text-muted">{t('stack.note')}</p>
+        </Reveal>
+        <Stagger className="mt-8 flex flex-wrap gap-2">
+          {['Java', 'Python', 'TypeScript', 'Spring Boot', 'React', 'OR-Tools', 'MediaPipe', 'PostgreSQL', 'Docker'].map(
+            (s) => (
+              <StaggerItem key={s}>
+                <Chip>{s}</Chip>
+              </StaggerItem>
+            ),
+          )}
+        </Stagger>
+      </Section>
+
+      <Section id="contact" label={t('contact.label')} title={t('contact.title')}>
+        <Reveal>
+          <p className="mt-5 text-muted">Placeholder — el contenido real llega en su paso.</p>
+        </Reveal>
+      </Section>
+    </div>
   )
 }

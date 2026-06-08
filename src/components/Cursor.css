@@ -1,0 +1,45 @@
+.cur-dot,
+.cur-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  pointer-events: none;
+  border-radius: 50%;
+  will-change: transform;
+  display: none;
+}
+.cur-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--color-accent2);
+}
+.cur-ring {
+  width: 34px;
+  height: 34px;
+  border: 1.5px solid rgba(184, 56, 76, 0.7);
+  transition: width 0.25s, height 0.25s, border-color 0.25s, background 0.25s;
+}
+.cur-ring.hov {
+  width: 56px;
+  height: 56px;
+  background: var(--color-accent-soft);
+  border-color: var(--color-accent2);
+}
+
+@media (pointer: fine) {
+  .js-cur .cur-dot,
+  .js-cur .cur-ring {
+    display: block;
+  }
+  .js-cur,
+  .js-cur a,
+  .js-cur button,
+  .js-cur [data-cursor],
+  .js-cur .chip,
+  .js-cur input,
+  .js-cur textarea,
+  .js-cur select {
+    cursor: none;
+  }
+}
