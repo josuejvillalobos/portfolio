@@ -55,10 +55,12 @@ export default function Work() {
                     {t('projects.demoLink')}
                   </a>
                 )}
-                <a href={p.code} target="_blank" rel="noreferrer" className={plink}>
-                  <GitHubIcon />
-                  {t('projects.codeLink')}
-                </a>
+                {p.code ? (
+                  <a href={p.code} target="_blank" rel="noreferrer" className={plink}>
+                    <GitHubIcon />
+                    {t('projects.codeLink')}
+                  </a>
+                ) : null}
               </div>
             </article>
           </StaggerItem>

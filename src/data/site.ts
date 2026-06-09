@@ -6,8 +6,7 @@ export const site = {
   email: 'josue.villa778@gmail.com',
   github,
   linkedin: 'https://www.linkedin.com/in/josue-joel-villalobos-alferez-b5aa0a2b4',
-  // Put your PDF at  public/cv/josue-villalobos-cv.pdf
-  cv: `${BASE}cv/josue-villalobos-cv.pdf`,
+  cv: `${BASE}cv/josuejvillalobos_CV_2026.pdf`,
 } as const
 
 export type Project = {
@@ -17,9 +16,11 @@ export type Project = {
   tagKey?: string
   metrics: { value: string; labelKey: string }[]
   demo?: string
-  code: string
+  code?: string
 }
 
+// Add, remove, or update projects here for the Work section.
+// Each project can provide a demo anchor and/or a repo/code link.
 export const projects: Project[] = [
   {
     id: 'route',
@@ -40,7 +41,7 @@ export const projects: Project[] = [
       { value: '1st', labelKey: 'projects.bioterra.k1' },
       { value: 'RT', labelKey: 'projects.bioterra.k2' },
     ],
-    code: github,
+    code: 'https://github.com/josuejvillalobos/Bio_terra.git',
   },
   {
     id: 'hr',
@@ -50,16 +51,5 @@ export const projects: Project[] = [
       { value: '−60%', labelKey: 'projects.hr.k1' },
       { value: 'RBAC', labelKey: 'projects.hr.k2' },
     ],
-    code: github,
-  },
-  {
-    id: 'customs',
-    title: 'Customs Quotation Automation',
-    meta: 'Datallizer · 2024',
-    metrics: [
-      { value: '−30%', labelKey: 'projects.customs.k1' },
-      { value: '0', labelKey: 'projects.customs.k2' },
-    ],
-    code: github,
   },
 ]

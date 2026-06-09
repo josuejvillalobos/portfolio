@@ -1,5 +1,6 @@
 {
   "nav": { "work": "Proyectos", "approach": "Enfoque", "stack": "Stack", "contact": "Contacto", "cv": "Descargar CV" },
+  "lang": { "en": "English", "es": "Español", "de": "Deutsch" },
   "hero": {
     "eyebrow": "Desarrollador de IA y Automatización — Aguascalientes, MX",
     "headlinePre": "Convierto operaciones complejas en ",

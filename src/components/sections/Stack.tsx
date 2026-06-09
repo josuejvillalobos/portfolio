@@ -5,10 +5,37 @@ import { Chip } from '../ui/Chip'
 
 type Item = { label?: string; tKey?: string }
 const GROUPS: { titleKey: string; items: Item[] }[] = [
-  { titleKey: 'stack.lang', items: [{ label: 'Java' }, { label: 'Python' }, { label: 'TypeScript' }, { label: 'SQL' }] },
-  { titleKey: 'stack.fw', items: [{ label: 'Spring Boot' }, { label: 'React' }, { label: 'OR-Tools' }, { label: 'MediaPipe' }] },
-  { titleKey: 'stack.ai', items: [{ tKey: 'stack.ml' }, { tKey: 'stack.meta' }, { tKey: 'stack.fuzzy' }, { tKey: 'stack.constr' }] },
-  { titleKey: 'stack.data', items: [{ label: 'PostgreSQL' }, { label: 'Docker' }, { label: 'Power BI' }, { label: 'Linux' }, { label: 'Git' }] },
+  {
+    titleKey: 'stack.lang',
+    items: [{ label: 'Java' }, { label: 'Python' }, { label: 'TypeScript' }, { label: 'JavaScript' }, { label: 'SQL' }],
+  },
+  {
+    titleKey: 'stack.fw',
+    items: [{ label: 'Spring Boot' }, { label: 'React' }, { label: 'FastAPI' }, { label: 'Bootstrap' }],
+  },
+  {
+    titleKey: 'stack.ai',
+    items: [
+      { tKey: 'stack.ml' },
+      { tKey: 'stack.meta' },
+      { tKey: 'stack.fuzzy' },
+      { tKey: 'stack.constr' },
+      { label: 'OR-Tools' },
+      { label: 'MediaPipe' },
+    ],
+  },
+  {
+    titleKey: 'stack.data',
+    items: [
+      { label: 'PostgreSQL' },
+      { label: 'Redis' },
+      { label: 'Docker' },
+      { label: 'Power BI' },
+      { label: 'Linux' },
+      { label: 'Git' },
+      { label: 'Postman' },
+    ],
+  },
 ]
 
 export default function Stack() {

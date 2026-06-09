@@ -1,8 +1,11 @@
 import { useLang } from '../../i18n'
 import { site } from '../../data/site'
 
+const switcher =
+  'rounded-full border border-line2 bg-surface px-3 py-2 text-[0.82rem] font-medium text-text transition hover:border-line hover:text-accent2 active:scale-[0.97]'
+
 export default function Header() {
-  const { t } = useLang()
+  const { t, cycle, next } = useLang()
 
   return (
     <header className="border-b border-line">
@@ -17,6 +20,9 @@ export default function Header() {
           <a href="#contact" className="hover:underline">
             {t('nav.contact') || 'Contact'}
           </a>
+          <button type="button" className={switcher} onClick={cycle}>
+            {t(`lang.${next}`)}
+          </button>
         </div>
       </nav>
     </header>

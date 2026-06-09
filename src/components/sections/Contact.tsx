@@ -1,4 +1,5 @@
 import { useLang } from '../../i18n'
+import { useState } from 'react'
 import { site } from '../../data/site'
 import { Reveal } from '../ui/Reveal'
 
@@ -9,6 +10,13 @@ const ghost =
 
 export default function Contact() {
   const { t } = useLang()
+  const [copied, setCopied] = useState(false)
+
+  const handleCopy = async () => {
+    await navigator.clipboard.writeText(site.email)
+    setCopied(true)
+    window.setTimeout(() => setCopied(false), 1800)
+  }
   return (
     <section id="contact" className="border-t border-line py-[clamp(4rem,9vh,7rem)]">
       <div className="mx-auto max-w-[1180px] px-[clamp(1.25rem,5vw,4rem)] text-center">
@@ -23,17 +31,22 @@ export default function Contact() {
           </h2>
         </Reveal>
         <Reveal>
-          <div className="mt-9 flex flex-wrap justify-center gap-3">
-            <a className={primary} href={`mailto:${site.email}`}>
-              {t('contact.email')}
-            </a>
+          <p className="mt-8 text-sm text-text/80">
+            {site.email}
+          </p>
+        </Reveal>
+        <Reveal>
+          <div className="mt-6 flex flex-wrap justify-center gap-3">
+            <button type="button" className={primary} onClick={handleCopy}>
+              {copied ? 'Email copied' : site.email}
+            </button>
             <a className={ghost} href={site.github} target="_blank" rel="noreferrer">
               GitHub
             </a>
             <a className={ghost} href={site.linkedin} target="_blank" rel="noreferrer">
               LinkedIn
             </a>
-            <a className={ghost} href={site.cv} download>
+            <a className={ghost} href={site.cv} download="JosueV-Villalobos-CV.pdf">
               {t('nav.cv')}
             </a>
           </div>
