@@ -1,0 +1,7 @@
+export { default as Approach } from './Approach'
+export { default as Contact } from './Contact'
+export { default as Demos } from './Demos'
+export { default as Hero } from './Hero'
+export { default as Impact } from './Impact'
+export { default as Stack } from './Stack'
+export { default as Work } from './Work'

@@ -1,5 +1,6 @@
 {
   "nav": { "work": "Work", "approach": "Approach", "stack": "Stack", "contact": "Contact", "cv": "Download CV" },
+  "lang": { "en": "English", "es": "Español", "de": "Deutsch" },
   "hero": {
     "eyebrow": "AI & Automation Developer — Aguascalientes, MX",
     "headlinePre": "I turn complex operations into ",

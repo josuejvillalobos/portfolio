@@ -1,5 +1,6 @@
 {
   "nav": { "work": "Projekte", "approach": "Ansatz", "stack": "Stack", "contact": "Kontakt", "cv": "Lebenslauf" },
+  "lang": { "en": "English", "es": "Español", "de": "Deutsch" },
   "hero": {
     "eyebrow": "KI- & Automatisierungsentwickler — Aguascalientes, MX",
     "headlinePre": "Ich verwandle komplexe Abläufe in ",
