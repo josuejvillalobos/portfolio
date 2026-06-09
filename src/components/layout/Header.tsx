@@ -1,4 +1,5 @@
 import { useLang } from '../../i18n'
+import { site } from '../../data/site'
 
 export default function Header() {
   const { t } = useLang()
@@ -7,7 +8,7 @@ export default function Header() {
     <header className="border-b border-line">
       <nav className="mx-auto flex max-w-[1180px] items-center justify-between px-[clamp(1.25rem,5vw,4rem)] py-4">
         <a href="#top" className="font-display text-lg font-bold">
-          {t('site.name') || 'Josue Villalobos'}
+          {site.name}
         </a>
         <div className="flex items-center gap-4 text-sm">
           <a href="#work" className="hover:underline">

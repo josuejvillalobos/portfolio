@@ -1,6 +1,3 @@
-// Single source of truth for identity, links & projects.
-// Language-neutral data lives here; translatable text lives in src/i18n/*.json.
-
 const BASE = import.meta.env.BASE_URL
 const github = 'https://github.com/josuejvillalobos'
 
@@ -14,13 +11,13 @@ export const site = {
 } as const
 
 export type Project = {
-  id: string // matches the key in i18n: projects.<id>.desc, .k1, .k2
-  title: string // proper name, kept constant across languages
-  meta?: string // constant tag (org · year)
-  tagKey?: string // OR a translated tag from i18n
+  id: string
+  title: string
+  meta?: string
+  tagKey?: string
   metrics: { value: string; labelKey: string }[]
-  demo?: string // anchor or URL to a live demo
-  code: string // repo URL
+  demo?: string
+  code: string
 }
 
 export const projects: Project[] = [
@@ -33,7 +30,7 @@ export const projects: Project[] = [
       { value: '−70%', labelKey: 'projects.route.k2' },
     ],
     demo: '#demos',
-    code: github, // TODO: cambia por el repo específico cuando lo tengas
+    code: github,
   },
   {
     id: 'bioterra',

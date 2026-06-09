@@ -42,7 +42,6 @@ export default function Hero() {
 
   return (
     <section className="relative isolate overflow-hidden">
-      {/* atmosphere */}
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 -z-10"

@@ -3,7 +3,6 @@ import type { ReactNode } from 'react'
 
 const EASE = [0.2, 0.7, 0.2, 1] as const
 
-// Fade + rise the first time it scrolls into view.
 export function Reveal({
   children,
   delay = 0,
@@ -28,7 +27,6 @@ export function Reveal({
   )
 }
 
-// Wrap a list; children added via <StaggerItem> reveal one after another.
 export function Stagger({
   children,
   className,

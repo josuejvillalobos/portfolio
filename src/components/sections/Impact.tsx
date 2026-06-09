@@ -15,14 +15,10 @@ function CountUp({ to, prefix = '', suffix = '' }: { to: number; prefix?: string
   const ref = useRef<HTMLSpanElement>(null)
   const inView = useInView(ref, { once: true, margin: '-15% 0px' })
   const reduce = useReducedMotion()
-  const [v, setV] = useState(0)
+  const [v, setV] = useState(reduce ? to : 0)
 
   useEffect(() => {
-    if (!inView) return
-    if (reduce) {
-      setV(to)
-      return
-    }
+    if (!inView || reduce) return
     let raf = 0
     let start: number | null = null
     const step = (t: number) => {

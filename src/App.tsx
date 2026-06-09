@@ -1,20 +1,8 @@
 import { useLenis } from './hooks/useLenis'
-import Cursor from './components/Cursor'
-import Header from './components/layout/Header'
-import Hero from './components/sections/Hero'
-import Impact from './components/sections/Impact'
-import Approach from './components/sections/Approach'
-import Work from './components/sections/Work'
-import Demos from './components/sections/Demos'
-import Stack from './components/sections/Stack'
-import { Section } from './components/ui/Section'
-import { Reveal } from './components/ui/Reveal'
-import { useLang } from './i18n'
+import { Cursor, Header, Footer, Hero, Impact, Approach, Work, Demos, Stack, Contact } from './components'
 
-// Step 9: + real Stack. Contact still placeholder.
 export default function App() {
   useLenis()
-  const { t } = useLang()
 
   return (
     <div id="top">
@@ -28,12 +16,9 @@ export default function App() {
       <Work />
       <Demos />
       <Stack />
+      <Contact />
 
-      <Section id="contact" label={t('contact.label')} title={t('contact.title')}>
-        <Reveal>
-          <p className="mt-5 text-muted">Placeholder — el contenido real llega en el Paso 10.</p>
-        </Reveal>
-      </Section>
+      <Footer />
     </div>
   )
 }

@@ -1,31 +1,7 @@
-import {
-  createContext,
-  useContext,
-  useState,
-  useMemo,
-  useEffect,
-  type ReactNode,
-} from 'react'
-import en from './en.json'
-import es from './es.json'
-import de from './de.json'
-
-export type Lang = 'en' | 'es' | 'de'
-
-const dictionaries = { en, es, de } as const
-export const ORDER: Lang[] = ['en', 'es', 'de']
-const NEXT: Record<Lang, Lang> = { en: 'es', es: 'de', de: 'en' }
-
-type LangContextValue = {
-  lang: Lang
-  setLang: (l: Lang) => void
-  cycle: () => void
-  next: Lang
-  // Dot-path lookup: t('hero.sub'), t('projects.route.desc'). Falls back to the path if missing.
-  t: (path: string) => string
-}
-
-const LangContext = createContext<LangContextValue | null>(null)
+import { useState, useMemo, useEffect, type ReactNode } from 'react'
+import { dictionaries, NEXT } from './data'
+import type { Lang } from './data'
+import { LangContext, type LangContextValue } from './context'
 
 function resolve(obj: unknown, path: string): unknown {
   return path
@@ -41,8 +17,8 @@ function readStored(): Lang {
   try {
     const s = localStorage.getItem('lang')
     if (s === 'en' || s === 'es' || s === 'de') return s
-  } catch {
-    /* ignore */
+  } catch (error) {
+    void error
   }
   return 'en'
 }
@@ -53,8 +29,8 @@ export function LangProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     try {
       localStorage.setItem('lang', lang)
-    } catch {
-      /* ignore */
+    } catch (error) {
+      void error
     }
     document.documentElement.lang = lang
   }, [lang])
@@ -74,10 +50,4 @@ export function LangProvider({ children }: { children: ReactNode }) {
   )
 
   return <LangContext.Provider value={value}>{children}</LangContext.Provider>
-}
-
-export function useLang() {
-  const ctx = useContext(LangContext)
-  if (!ctx) throw new Error('useLang must be used within <LangProvider>')
-  return ctx
 }
