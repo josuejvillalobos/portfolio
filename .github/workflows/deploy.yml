@@ -29,6 +29,12 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Clean build artifacts
+        run: |
+          find ./dist -type l -delete
+          echo "Build artifact ready for deployment"
+          du -sh ./dist
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
