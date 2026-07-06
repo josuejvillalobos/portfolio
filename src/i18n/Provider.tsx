@@ -1,53 +1,34 @@
-import { useState, useMemo, useEffect, type ReactNode } from 'react'
-import { dictionaries, NEXT } from './data'
+import { useMemo, useEffect, useCallback, type ReactNode } from 'react'
+import { NEXT } from './data'
 import type { Lang } from './data'
 import { LangContext, type LangContextValue } from './context'
+import { DEFAULT_LANG, STORAGE_KEY, translate, isLang, type TranslationPath } from './utils'
+import { useLocalStorage } from '../hooks/useLocalStorage'
 
-function resolve(obj: unknown, path: string): unknown {
-  return path
-    .split('.')
-    .reduce<unknown>(
-      (acc, key) =>
-        acc && typeof acc === 'object' ? (acc as Record<string, unknown>)[key] : undefined,
-      obj,
-    )
+interface LangProviderProps {
+  children: ReactNode
 }
 
-function readStored(): Lang {
-  try {
-    const s = localStorage.getItem('lang')
-    if (s === 'en' || s === 'es' || s === 'de') return s
-  } catch (error) {
-    void error
-  }
-  return 'en'
-}
-
-export function LangProvider({ children }: { children: ReactNode }) {
-  const [lang, setLang] = useState<Lang>(readStored)
+export function LangProvider({ children }: LangProviderProps) {
+  const [lang, setLang] = useLocalStorage<Lang>(STORAGE_KEY, DEFAULT_LANG, {
+    validator: isLang,
+  })
 
   useEffect(() => {
-    try {
-      localStorage.setItem('lang', lang)
-    } catch (error) {
-      void error
-    }
     document.documentElement.lang = lang
   }, [lang])
 
-  const value = useMemo<LangContextValue>(
-    () => ({
-      lang,
-      setLang,
-      cycle: () => setLang((prev) => NEXT[prev]),
-      next: NEXT[lang],
-      t: (path: string) => {
-        const found = resolve(dictionaries[lang], path)
-        return typeof found === 'string' ? found : path
-      },
-    }),
-    [lang],
-  )
+  const cycle = useCallback(() => {
+    setLang((current) => NEXT[current])
+  }, [setLang])
+
+  const value = useMemo<LangContextValue>(() => ({
+    lang,
+    setLang,
+    cycle,
+    next: NEXT[lang],
+    t: (path: TranslationPath) => translate(lang, path),
+  }), [lang, cycle, setLang])
 
   return <LangContext.Provider value={value}>{children}</LangContext.Provider>
 }
