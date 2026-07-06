@@ -29,10 +29,15 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Clean build artifacts
+      - name: Remove symlinks and hard links from dist
         run: |
-          find ./dist -type l -delete
-          echo "Build artifact ready for deployment"
+          echo "Removing problematic files from dist..."
+          find ./dist -type l -delete || true
+          find ./dist -type f -links +1 -exec cp {} {}.tmp \; -exec mv {}.tmp {} \; || true
+          echo "Checking remaining files..."
+          find ./dist -type l 2>/dev/null | wc -l
+          find ./dist -type f -links +1 2>/dev/null | wc -l
+          echo "Total size:"
           du -sh ./dist
 
       - name: Configure Pages
