@@ -2,7 +2,7 @@
   "nav": { "work": "Work", "approach": "Approach", "stack": "Stack", "contact": "Contact", "cv": "Download CV" },
   "lang": { "en": "English", "es": "Español", "de": "Deutsch" },
   "hero": {
-    "eyebrow": "AI & Automation Developer — Aguascalientes, MX",
+    "eyebrow": "Software Developer — Optimization & Applied AI — Aguascalientes, MX",
     "headlinePre": "I turn complex operations into ",
     "headlineHl": "intelligent systems",
     "headlinePost": " that move the metrics that matter.",
@@ -14,20 +14,19 @@
   "metrics": {
     "travel": "Less average travel time — TSP solved at operational scale with metaheuristics.",
     "compute": "Less redundant computation under concurrent load via distance-matrix caching.",
-    "org": "Faster org-chart updates with dynamic, role-based interfaces.",
+    "org": "Faster decision cycles through dynamic, role-aware systems.",
     "hack": "National & international hackathon wins."
   },
   "approach": {
     "label": "Why work with me",
     "title": "I don't just write code — I make operations measurably better.",
     "body": "Give me a messy, real-world process and I'll turn it into a scalable system that runs itself. My core is automation and optimization: finding the bottleneck, modeling it, and shipping software that holds up under real load.",
-    "body2": "I adapt fast across domains — field logistics, HR, customs, agriculture — and I optimize for outcomes, not buzzwords. Every project here exists because it moved a number that mattered to the business."
+    "body2": "I adapt fast across domains — field logistics, customs, agriculture — and I optimize for outcomes, not buzzwords. Every project here exists because it moved a number that mattered to the business."
   },
   "work": { "label": "Selected work", "title": "Real systems, real impact." },
   "projects": {
     "route": { "desc": "AI-powered route optimization for field operations, solving the Traveling Salesman Problem at scale with metaheuristics over real geospatial data.", "k1": "travel time", "k2": "redundant compute" },
     "bioterra": { "tag": "1st place · Medellín, Colombia", "desc": "Smart agriculture platform with real-time soil monitoring and blockchain-based traceability. First place in the environment vertical.", "k1": "intl. hackathon", "k2": "soil monitoring" },
-    "hr": { "desc": "Full-stack organizational management system covering the full directorate hierarchy, with role-based interfaces for real-time structural changes.", "k1": "manual update time", "k2": "real-time changes" },
     "customs": { "desc": "Automated customs quotation management that removed manual bottlenecks and eliminated data-entry errors across internal workflows.", "k1": "processing time", "k2": "data-entry errors" },
     "demoLink": "Live demo",
     "codeLink": "Code"
@@ -44,10 +43,18 @@
     "title": "The tools behind the work.",
     "note": "This is the only place I list technologies — the rest of this site is about what I built with them.",
     "lang": "Languages",
-    "fw": "Frameworks",
+    "backend": "Backend",
+    "frontend": "Frontend",
     "ai": "AI & Optimization",
-    "data": "Data & Platforms",
+    "pipeline": "Data & ML Pipeline",
+    "database": "Databases & Caching",
+    "devops": "DevOps & Infrastructure",
+    "testing": "Testing",
+    "arch": "Architecture & Patterns",
+    "tools": "Tools & Platforms",
     "ml": "Machine Learning",
+    "dl": "Deep Learning",
+    "cv": "Computer Vision",
     "meta": "Metaheuristics",
     "fuzzy": "Fuzzy logic",
     "constr": "Constraint optimization"

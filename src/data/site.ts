@@ -43,13 +43,4 @@ export const projects: Project[] = [
     ],
     code: 'https://github.com/josuejvillalobos/Bio_terra.git',
   },
-  {
-    id: 'hr',
-    title: 'HR & Organizational System',
-    meta: 'MIAA · 2026',
-    metrics: [
-      { value: '−60%', labelKey: 'projects.hr.k1' },
-      { value: 'RBAC', labelKey: 'projects.hr.k2' },
-    ],
-  },
 ]

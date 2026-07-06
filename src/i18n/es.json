@@ -2,7 +2,7 @@
   "nav": { "work": "Proyectos", "approach": "Enfoque", "stack": "Stack", "contact": "Contacto", "cv": "Descargar CV" },
   "lang": { "en": "English", "es": "Español", "de": "Deutsch" },
   "hero": {
-    "eyebrow": "Desarrollador de IA y Automatización — Aguascalientes, MX",
+    "eyebrow": "Software Developer — Optimización e IA Aplicada — Aguascalientes, MX",
     "headlinePre": "Convierto operaciones complejas en ",
     "headlineHl": "sistemas inteligentes",
     "headlinePost": " que mueven las métricas que importan.",
@@ -14,20 +14,19 @@
   "metrics": {
     "travel": "Menos tiempo de viaje promedio — TSP resuelto a escala operativa con metaheurísticas.",
     "compute": "Menos cómputo redundante bajo carga concurrente vía caché de matrices de distancia.",
-    "org": "Actualizaciones de organigrama más rápidas con interfaces dinámicas por roles.",
+    "org": "Ciclos de decisión más rápidos gracias a sistemas dinámicos y orientados a roles.",
     "hack": "Triunfos en hackathones nacionales e internacionales."
   },
   "approach": {
     "label": "Por qué trabajar conmigo",
     "title": "No solo escribo código — hago que las operaciones mejoren de forma medible.",
     "body": "Dame un proceso real y desordenado y lo convierto en un sistema escalable que se opera solo. Mi núcleo es la automatización y la optimización: encontrar el cuello de botella, modelarlo y entregar software que aguanta carga real.",
-    "body2": "Me adapto rápido entre dominios — logística de campo, RR.HH., aduanas, agricultura — y optimizo por resultados, no por modas. Cada proyecto aquí existe porque movió un número que le importaba al negocio."
+    "body2": "Me adapto rápido entre dominios — logística de campo, aduanas, agricultura — y optimizo por resultados, no por modas. Cada proyecto aquí existe porque movió un número que le importaba al negocio."
   },
   "work": { "label": "Trabajo seleccionado", "title": "Sistemas reales, impacto real." },
   "projects": {
     "route": { "desc": "Optimización de rutas con IA para operaciones de campo, resolviendo el Problema del Agente Viajero a escala con metaheurísticas sobre datos geoespaciales reales.", "k1": "tiempo de viaje", "k2": "cómputo redundante" },
     "bioterra": { "tag": "1er lugar · Medellín, Colombia", "desc": "Plataforma de agricultura inteligente con monitoreo de suelo en tiempo real y trazabilidad basada en blockchain. Primer lugar en la vertical de medio ambiente.", "k1": "hackathon intl.", "k2": "monitoreo de suelo" },
-    "hr": { "desc": "Sistema full-stack de gestión organizacional que cubre toda la jerarquía de direcciones, con interfaces por roles para cambios estructurales en tiempo real.", "k1": "tiempo manual", "k2": "cambios en tiempo real" },
     "customs": { "desc": "Gestión automatizada de cotizaciones aduaneras que eliminó cuellos de botella manuales y errores de captura en los flujos internos.", "k1": "tiempo de proceso", "k2": "errores de captura" },
     "demoLink": "Demo en vivo",
     "codeLink": "Código"
@@ -44,10 +43,18 @@
     "title": "Las herramientas detrás del trabajo.",
     "note": "Este es el único lugar donde listo tecnologías — el resto del sitio trata de lo que construí con ellas.",
     "lang": "Lenguajes",
-    "fw": "Frameworks",
+    "backend": "Backend",
+    "frontend": "Frontend",
     "ai": "IA y Optimización",
-    "data": "Datos y Plataformas",
+    "pipeline": "Pipeline de datos y ML",
+    "database": "Bases de datos y caché",
+    "devops": "DevOps e Infraestructura",
+    "testing": "Testing",
+    "arch": "Arquitectura y patrones",
+    "tools": "Herramientas y plataformas",
     "ml": "Machine Learning",
+    "dl": "Deep Learning",
+    "cv": "Visión por computadora",
     "meta": "Metaheurísticas",
     "fuzzy": "Lógica difusa",
     "constr": "Optimización con restricciones"
